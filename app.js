@@ -12,33 +12,33 @@ const dictionary = {
     secOursSubtitle: "Herramientas premium desarrolladas bajo los estándares más altos de seguridad y rendimiento.",
     
     // Gravity Preview
-    descGravity: "Previsualiza cualquier enlace al instante en una ventana flotante sin tener que abrir nuevas pestañas. ¡Arrastra, fija y lee de forma ultra-rápida!",
+    descGravity: "Previsualiza cualquier enlace al instante en un popup flotante con solo pasar el cursor. Navega rápido, lee contenido sin abrir pestañas y personaliza tus tiempos de respuesta.",
     dlBtn: "Descargar en Chrome Web Store",
     
     // Shopping List
     titleShopping: "Lista de la Compra",
-    descShopping: "Guarda y organiza tus productos favoritos de cualquier tienda online. Sincronización local, segura y sin publicidad molesta.",
+    descShopping: "El carrito de compras universal. Agrupa, organiza y guarda productos de tus tiendas online favoritas en una sola lista local, sin rastreadores ni anuncios.",
     
     // InstaSkip
-    descInstaSkip: "Salta anuncios automáticamente de manera inteligente en tus portales de streaming favoritos para una experiencia continua y limpia.",
+    descInstaSkip: "Disfruta de streaming ininterrumpido. Salta de forma automática e inteligente los anuncios molestos en tus portales de vídeo preferidos sin retardos.",
 
     // FirmaPDF
-    descFirmaPdf: "Firma cualquier documento PDF de forma rápida y sencilla directamente desde tu navegador, con total seguridad y privacidad local.",
+    descFirmaPdf: "Firma digital instantánea y segura. Firma cualquier PDF localmente desde tu navegador en un clic sin subir tus documentos privados a servidores externos.",
 
     // Recortador Pro
     titleCropper: "Recortador Pro",
-    descCropper: "Realiza capturas de pantalla parciales o completas al instante. Edita, recorta y copia la imagen directamente al portapapeles.",
+    descCropper: "Capturas de pantalla inteligentes. Recorta, edita y copia cualquier sección de tu navegador directamente a tu portapapeles o descárgala al instante.",
 
     // Downloads Manager
     titleDownloads: "Downloads Manager",
-    descDownloads: "Accede de forma rápida y limpia a tu historial de descargas recientes. Limpia la lista y organiza tus descargas en un clic.",
+    descDownloads: "Acceso y limpieza de descargas en un clic. Administra tu historial de descargas recientes desde una barra de herramientas minimalista y optimizada.",
 
     // FisioBreak
-    descFisioBreak: "Recibe recordatorios amigables para hacer pausas de estiramiento y cuidar de tu postura física mientras trabajas en el ordenador.",
+    descFisioBreak: "Tu bienestar en el escritorio. Recordatorios inteligentes y animados de estiramientos ergonómicos para evitar dolores musculares durante tus horas de trabajo.",
 
     // Pesca Abisal
     titlePesca: "Pesca Abisal",
-    descPesca: "Relájate con este minijuego retro de pesca submarina en tu navegador. Ideal para tomarte un breve descanso en tu jornada laboral.",
+    descPesca: "El descanso retro perfecto. Un minijuego pixel-art de pesca submarina diseñado para desconectar y relajar tu mente durante breves pausas de trabajo.",
     
     // Recommendations Section
     secRecsTitle: "Las Mejores Extensiones de Chrome del 2026",
@@ -65,33 +65,33 @@ const dictionary = {
     secOursSubtitle: "Premium tools developed under the highest standards of security and performance.",
     
     // Gravity Preview
-    descGravity: "Preview any link instantly in a floating window without opening new tabs. Drag, pin, and read ultra-fast!",
+    descGravity: "Preview any web link instantly in a secure floating popup. Speed up your browsing, read articles without cluttering tabs, and customize your hover delays.",
     dlBtn: "Download on Chrome Web Store",
     
     // Shopping List
     titleShopping: "Shopping List",
-    descShopping: "Save and organize your favorite products from any online store. Local, secure, and ad-free syncing.",
+    descShopping: "The universal shopping cart. Consolidate and track products from all your favorite online stores in one clean, local dashboard. 100% private and ad-free.",
     
     // InstaSkip
-    descInstaSkip: "Automatically skip ads intelligently on your favorite streaming portals for a clean and continuous experience.",
+    descInstaSkip: "Enjoy uninterrupted video streaming. Automatically and intelligently skip annoying video ads on your favorite streaming sites with zero delay.",
 
     // FirmaPDF
-    descFirmaPdf: "Sign any PDF document quickly and easily right from your browser, with total security and local privacy.",
+    descFirmaPdf: "Instant and secure digital signing. Sign any PDF file locally in your browser with a single click. Keep your private documents offline and secure.",
 
     // Recortador Pro
     titleCropper: "Screen Cropper Pro",
-    descCropper: "Take partial or full screenshots instantly. Edit, crop, and copy the image directly to your clipboard.",
+    descCropper: "Smart screen capture utility. Crop, annotate, and copy any section of your browser directly to your clipboard or download it instantly.",
 
     // Downloads Manager
     titleDownloads: "Downloads Manager",
-    descDownloads: "Quickly and cleanly access your recent downloads list. Clear the log and organize downloads in one click.",
+    descDownloads: "One-click download management. Access, clean, and organize your recent downloads history from a clean, lightweight toolbar interface.",
 
     // FisioBreak
-    descFisioBreak: "Receive friendly reminders to stretch, take breaks, and improve your physical posture while working at your desk.",
+    descFisioBreak: "Your desk wellness assistant. Receive smart, animated reminder alerts for ergonomic stretches to prevent muscle fatigue during long work sessions.",
 
     // Pesca Abisal
     titlePesca: "Abyssal Fishing",
-    descPesca: "Relax with this retro submarine fishing minigame inside your browser. Perfect for taking short breaks during work.",
+    descPesca: "The ultimate retro break. A charming pixel-art deep-sea fishing minigame designed to help you relax and refresh your mind during quick work breaks.",
     
     // Recommendations Section
     secRecsTitle: "The Best Chrome Extensions of 2026",
@@ -109,7 +109,7 @@ const dictionary = {
 };
 
 // State Variable
-let currentLang = localStorage.getItem('siteLanguage') || 'es';
+let currentLang = localStorage.getItem('siteLanguage') || 'en';
 
 // DOM Elements
 const btnToggleLang = document.getElementById('btn-toggle-lang');
