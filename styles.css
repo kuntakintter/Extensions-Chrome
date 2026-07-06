@@ -1,16 +1,16 @@
 /* Design System & Tokens */
 :root {
-  --bg-primary: #030014;
+  --bg-primary: #07090e;
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
-  --accent-purple: #a855f7;
-  --accent-blue: #3b82f6;
-  --accent-indigo: #6366f1;
-  --glow-purple: rgba(168, 85, 247, 0.15);
-  --glow-blue: rgba(59, 130, 246, 0.15);
+  --accent-purple: #0ea5e9; /* Light Tech Blue */
+  --accent-blue: #0b57d0;   /* Chrome Blue */
+  --accent-indigo: #2563eb; /* Steel Blue */
+  --glow-purple: rgba(14, 165, 233, 0.12);
+  --glow-blue: rgba(11, 87, 208, 0.12);
   --glass-bg: rgba(255, 255, 255, 0.02);
-  --glass-border: rgba(255, 255, 255, 0.07);
-  --glass-border-hover: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-border-hover: rgba(255, 255, 255, 0.12);
 }
 
 /* Base Styles & Typography */
@@ -232,7 +232,6 @@ h1, h2, h3, h4 {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: 16px;
-  padding: 32px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -246,6 +245,7 @@ h1, h2, h3, h4 {
   top: 0; left: 0; right: 0; height: 3px;
   background: transparent;
   transition: background 0.3s ease;
+  z-index: 10;
 }
 
 .ext-card:hover {
@@ -258,41 +258,96 @@ h1, h2, h3, h4 {
   background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
 }
 
+/* Image preview section styling */
+.card-image-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--glass-border);
+  position: relative;
+  background: #111520;
+}
+
+.card-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ext-card:hover .card-preview-image {
+  transform: scale(1.04);
+}
+
+.card-content-wrapper {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
 .card-icon-wrapper {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
-  margin-bottom: 24px;
+  font-size: 1.25rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--glass-border);
+  flex-shrink: 0;
 }
 
 .purple-glow {
-  box-shadow: 0 0 15px rgba(168, 85, 247, 0.2) inset;
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.25) inset;
 }
 
 .blue-glow {
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.2) inset;
+  box-shadow: 0 0 10px rgba(11, 87, 208, 0.25) inset;
 }
 
 .red-glow {
-  box-shadow: 0 0 15px rgba(239, 68, 68, 0.2) inset;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.25) inset;
+}
+
+.orange-glow {
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.25) inset;
+}
+
+.green-glow {
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.25) inset;
+}
+
+.teal-glow {
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.25) inset;
+}
+
+.cyan-glow {
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.25) inset;
+}
+
+.magenta-glow {
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.25) inset;
 }
 
 .card-title {
-  font-size: 1.3rem;
-  margin-bottom: 12px;
+  font-size: 1.15rem;
+  line-height: 1.2;
 }
 
 .card-desc {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   flex-grow: 1;
 }
 
