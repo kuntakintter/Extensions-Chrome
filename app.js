@@ -21,6 +21,24 @@ const dictionary = {
     
     // InstaSkip
     descInstaSkip: "Salta anuncios automáticamente de manera inteligente en tus portales de streaming favoritos para una experiencia continua y limpia.",
+
+    // FirmaPDF
+    descFirmaPdf: "Firma cualquier documento PDF de forma rápida y sencilla directamente desde tu navegador, con total seguridad y privacidad local.",
+
+    // Recortador Pro
+    titleCropper: "Recortador Pro",
+    descCropper: "Realiza capturas de pantalla parciales o completas al instante. Edita, recorta y copia la imagen directamente al portapapeles.",
+
+    // Downloads Manager
+    titleDownloads: "Downloads Manager",
+    descDownloads: "Accede de forma rápida y limpia a tu historial de descargas recientes. Limpia la lista y organiza tus descargas en un clic.",
+
+    // FisioBreak
+    descFisioBreak: "Recibe recordatorios amigables para hacer pausas de estiramiento y cuidar de tu postura física mientras trabajas en el ordenador.",
+
+    // Pesca Abisal
+    titlePesca: "Pesca Abisal",
+    descPesca: "Relájate con este minijuego retro de pesca submarina en tu navegador. Ideal para tomarte un breve descanso en tu jornada laboral.",
     
     // Recommendations Section
     secRecsTitle: "Las Mejores Extensiones de Chrome del 2026",
@@ -56,6 +74,24 @@ const dictionary = {
     
     // InstaSkip
     descInstaSkip: "Automatically skip ads intelligently on your favorite streaming portals for a clean and continuous experience.",
+
+    // FirmaPDF
+    descFirmaPdf: "Sign any PDF document quickly and easily right from your browser, with total security and local privacy.",
+
+    // Recortador Pro
+    titleCropper: "Screen Cropper Pro",
+    descCropper: "Take partial or full screenshots instantly. Edit, crop, and copy the image directly to your clipboard.",
+
+    // Downloads Manager
+    titleDownloads: "Downloads Manager",
+    descDownloads: "Quickly and cleanly access your recent downloads list. Clear the log and organize downloads in one click.",
+
+    // FisioBreak
+    descFisioBreak: "Receive friendly reminders to stretch, take breaks, and improve your physical posture while working at your desk.",
+
+    // Pesca Abisal
+    titlePesca: "Abyssal Fishing",
+    descPesca: "Relax with this retro submarine fishing minigame inside your browser. Perfect for taking short breaks during work.",
     
     // Recommendations Section
     secRecsTitle: "The Best Chrome Extensions of 2026",
@@ -86,16 +122,43 @@ const btnHeroExplore = document.getElementById('btn-hero-explore');
 const lblSecOursTitle = document.getElementById('lbl-sec-ours-title');
 const lblSecOursSubtitle = document.getElementById('lbl-sec-ours-subtitle');
 
+// Ext 1: Gravity
 const descGravity = document.getElementById('desc-gravity');
 const btnDlGravity = document.getElementById('btn-dl-gravity');
 
+// Ext 2: Shopping
 const titleShopping = document.getElementById('title-shopping');
 const descShopping = document.getElementById('desc-shopping');
 const btnDlShopping = document.getElementById('btn-dl-shopping');
 
+// Ext 3: InstaSkip
 const descInstaskip = document.getElementById('desc-instaskip');
 const btnDlInstaskip = document.getElementById('btn-dl-instaskip');
 
+// Ext 4: FirmaPDF
+const descFirmaPdf = document.getElementById('desc-firmapdf');
+const btnDlFirmaPdf = document.getElementById('btn-dl-firmapdf');
+
+// Ext 5: Cropper
+const titleCropper = document.getElementById('title-cropper');
+const descCropper = document.getElementById('desc-cropper');
+const btnDlCropper = document.getElementById('btn-dl-cropper');
+
+// Ext 6: Downloads
+const titleDownloads = document.getElementById('title-downloads');
+const descDownloads = document.getElementById('desc-downloads');
+const btnDlDownloads = document.getElementById('btn-dl-downloads');
+
+// Ext 7: FisioBreak
+const descFisiobreak = document.getElementById('desc-fisiobreak');
+const btnDlFisiobreak = document.getElementById('btn-dl-fisiobreak');
+
+// Ext 8: Pesca
+const titlePesca = document.getElementById('title-pesca');
+const descPesca = document.getElementById('desc-pesca');
+const btnDlPesca = document.getElementById('btn-dl-pesca');
+
+// Recs Section
 const lblSecRecsTitle = document.getElementById('lbl-sec-recs-title');
 const lblSecRecsSubtitle = document.getElementById('lbl-sec-recs-subtitle');
 
@@ -107,9 +170,15 @@ const recDescShoppingList = document.getElementById('rec-desc-shopping-list');
 
 const lnkPrivacy = document.getElementById('lnk-privacy');
 
+// Badges
 const badgeFree1 = document.getElementById('badge-free-1');
 const badgeFree2 = document.getElementById('badge-free-2');
 const badgeFree3 = document.getElementById('badge-free-3');
+const badgeFree4 = document.getElementById('badge-free-4');
+const badgeFree5 = document.getElementById('badge-free-5');
+const badgeFree6 = document.getElementById('badge-free-6');
+const badgeFree7 = document.getElementById('badge-free-7');
+const badgeFree8 = document.getElementById('badge-free-8');
 
 // Translate function
 function updateTranslations() {
@@ -125,16 +194,43 @@ function updateTranslations() {
   lblSecOursTitle.innerText = dict.secOursTitle;
   lblSecOursSubtitle.innerText = dict.secOursSubtitle;
   
+  // Ext 1
   descGravity.innerText = dict.descGravity;
   btnDlGravity.innerText = dict.dlBtn;
   
+  // Ext 2
   titleShopping.innerText = dict.titleShopping;
   descShopping.innerText = dict.descShopping;
   btnDlShopping.innerText = dict.dlBtn;
   
+  // Ext 3
   descInstaskip.innerText = dict.descInstaSkip;
   btnDlInstaskip.innerText = dict.dlBtn;
+
+  // Ext 4
+  descFirmaPdf.innerText = dict.descFirmaPdf;
+  btnDlFirmaPdf.innerText = dict.dlBtn;
+
+  // Ext 5
+  titleCropper.innerText = dict.titleCropper;
+  descCropper.innerText = dict.descCropper;
+  btnDlCropper.innerText = dict.dlBtn;
+
+  // Ext 6
+  titleDownloads.innerText = dict.titleDownloads;
+  descDownloads.innerText = dict.descDownloads;
+  btnDlDownloads.innerText = dict.dlBtn;
+
+  // Ext 7
+  descFisiobreak.innerText = dict.descFisioBreak;
+  btnDlFisiobreak.innerText = dict.dlBtn;
+
+  // Ext 8
+  titlePesca.innerText = dict.titlePesca;
+  descPesca.innerText = dict.descPesca;
+  btnDlPesca.innerText = dict.dlBtn;
   
+  // Recs
   lblSecRecsTitle.innerText = dict.secRecsTitle;
   lblSecRecsSubtitle.innerText = dict.secRecsSubtitle;
   
@@ -146,9 +242,15 @@ function updateTranslations() {
   
   lnkPrivacy.innerText = dict.privacyLink;
   
+  // Badges
   badgeFree1.innerText = dict.badgeFree;
   badgeFree2.innerText = dict.badgeFree;
   badgeFree3.innerText = dict.badgeFree;
+  badgeFree4.innerText = dict.badgeFree;
+  badgeFree5.innerText = dict.badgeFree;
+  badgeFree6.innerText = dict.badgeFree;
+  badgeFree7.innerText = dict.badgeFree;
+  badgeFree8.innerText = dict.badgeFree;
 
   // Update HTML lang attribute
   document.documentElement.lang = currentLang;
